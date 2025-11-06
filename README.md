@@ -6,7 +6,6 @@
 
 - Typescript
 - Next.js v16
-- Headless UI
 - TailwindCSS
 
 ## デプロイ環境
