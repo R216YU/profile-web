@@ -1,10 +1,10 @@
 "use client";
 
 import { BsGithub, BsInstagram, BsTwitterX } from "react-icons/bs";
-import LinkButton from "./LinkButton";
-import LinkIcon from "./LinkIcon";
-import { ModeToggle } from "./theme/mode-toggle";
-import Rara from "./custom/Rara";
+import LinkButton from "@/components/custom/LinkButton";
+import LinkIcon from "@/components/custom/LinkIcon";
+import { ModeToggle } from "@/components//theme/mode-toggle";
+import Rara from "@/components//custom/Rara";
 
 const Header = () => {
   return (
@@ -14,9 +14,9 @@ const Header = () => {
         <LinkIcon href="#header">
           <Rara size={24} />
         </LinkIcon>
-        <LinkButton href="#profile">Profile</LinkButton>
-        <LinkButton href="#skills">Skills</LinkButton>
-        <LinkButton href="#works">Works</LinkButton>
+        <LinkButton href="/">Profile</LinkButton>
+        <LinkButton href="/skills">Skills</LinkButton>
+        <LinkButton href="/works">Works</LinkButton>
       </div>
       {/* 右側 */}
       <div className="flex items-center gap-2">
