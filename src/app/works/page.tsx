@@ -1,4 +1,5 @@
 import LinkButton from "@/components/custom/LinkButton";
+import Container from "@/components/layout/Container";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Separator } from "@/components/ui/separator";
 import React from "react";
@@ -25,8 +26,7 @@ const WORKS: Work[] = [
 
 const WorksPage = () => {
   return (
-    <div className="flex flex-1 flex-col gap-16">
-      <h2 className="text-2xl font-semibold text-center">My Works</h2>
+    <Container title="Works">
       <div className="flex flex-col gap-8 mx-auto  ">
         {WORKS.map((work, index) => (
           <React.Fragment key={index}>
@@ -78,7 +78,7 @@ const WorksPage = () => {
           </React.Fragment>
         ))}
       </div>
-    </div>
+    </Container>
   );
 };
 

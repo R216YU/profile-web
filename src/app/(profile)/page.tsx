@@ -1,9 +1,7 @@
 "use client";
 
+import Container from "@/components/layout/Container";
+
 export default function Home() {
-  return (
-    <div className="flex">
-      <p>editing...</p>
-    </div>
-  );
+  return <Container title="Profile"></Container>;
 }

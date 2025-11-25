@@ -1,5 +1,7 @@
+import Container from "@/components/layout/Container";
+
 const page = () => {
-  return <div className="bg-cyan-500">Skills</div>;
+  return <Container title="Skills"></Container>;
 };
 
 export default page;
