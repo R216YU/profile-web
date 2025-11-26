@@ -1,3 +1,5 @@
+"use client";
+
 import LinkButton from "@/components/custom/LinkButton";
 import Container from "@/components/layout/Container";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -27,7 +29,7 @@ const WORKS: Work[] = [
 const WorksPage = () => {
   return (
     <Container title="Works">
-      <div className="flex flex-col gap-8 mx-auto  ">
+      <div className="flex flex-col gap-8 mx-auto">
         {WORKS.map((work, index) => (
           <React.Fragment key={index}>
             <div className="flex flex-row items-start gap-4">

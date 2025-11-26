@@ -5,6 +5,7 @@ import LinkButton from "@/components/custom/LinkButton";
 import LinkIcon from "@/components/custom/LinkIcon";
 import { ModeToggle } from "@/components//theme/mode-toggle";
 import Rara from "@/components//custom/Rara";
+import { TbCertificate } from "react-icons/tb";
 
 const Header = () => {
   return (
@@ -41,6 +42,13 @@ const Header = () => {
           rel="noopener noreferrer"
         >
           <BsGithub />
+        </LinkIcon>
+        <LinkIcon
+          href="https://www.credly.com/users/r216yu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TbCertificate />
         </LinkIcon>
         <ModeToggle />
       </div>
