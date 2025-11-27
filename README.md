@@ -6,9 +6,13 @@
 
 - Typescript
 - Next.js v16
-- TailwindCSS
+- TailwindCSS, shadcn/ui
 
-## デプロイ環境
+## Hosting
+
+- Vercel
+
+<!-- ## デプロイ環境
 
 - Amazon S3
 - Amazon CloudFront
@@ -20,4 +24,4 @@
 - AWS CodePipiline
 - AWS CodeBuild
 - AWS CodeDeploy
-- AWS CloudFormation (IaC)
+- AWS CloudFormation (IaC) -->
