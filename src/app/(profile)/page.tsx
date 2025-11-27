@@ -1,13 +1,11 @@
-"use client";
-
 import Container from "@/components/layout/Container";
-import { Table, TableCell, TableRow } from "@/components/ui/table";
+import Timeline, { TimelineEntry } from "@/components/custom/Timeline";
+import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import {
   Tooltip,
   TooltipTrigger,
   TooltipContent,
 } from "@/components/ui/tooltip";
-import Timeline, { TimelineEntry } from "@/components/custom/Timeline";
 
 const PROFILE_DATA = [
   {
@@ -85,7 +83,7 @@ const TIMELINE_DATA: TimelineEntry[] = [
 export default function Home() {
   return (
     <Container title="Ryu Suzuki's Profile">
-      <div className="flex flex-row items-center justify-center gap-16">
+      <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 items-center justify-center ">
         <div>
           <Tooltip>
             <TooltipTrigger>
@@ -100,12 +98,14 @@ export default function Home() {
         </div>
         <div className="flex flex-col">
           <Table>
-            {PROFILE_DATA.map((item) => (
-              <TableRow key={item.label} className="border-none">
-                <TableCell className="w-12">{item.label}</TableCell>
-                <TableCell>{item.value}</TableCell>
-              </TableRow>
-            ))}
+            <TableBody>
+              {PROFILE_DATA.map((item) => (
+                <TableRow key={item.label} className="border-none">
+                  <TableCell className="w-12">{item.label}</TableCell>
+                  <TableCell>{item.value}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
           </Table>
         </div>
       </div>

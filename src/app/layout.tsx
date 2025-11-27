@@ -31,17 +31,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider>
           <main className="container p-4 mx-auto flex flex-col gap-4">
             <Header />
-
             <div className="py-10">{children}</div>
-
             <Footer />
           </main>
         </ThemeProvider>

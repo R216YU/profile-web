@@ -1,11 +1,9 @@
-"use client";
-
+import React from "react";
+import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import LinkButton from "@/components/custom/LinkButton";
 import Container from "@/components/layout/Container";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Separator } from "@/components/ui/separator";
-import React from "react";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
 type Work = {
   title: string;
@@ -24,6 +22,13 @@ const WORKS: Work[] = [
     github: "https://github.com/R216YU/profile-web",
     image: "/works/my-web.png",
   },
+  {
+    title: "image-compressor-app",
+    description: "画像ファイルを圧縮するWebアプリです。現在作成中...",
+    link: "",
+    github: "",
+    image: "",
+  },
 ];
 
 const WorksPage = () => {
@@ -32,7 +37,7 @@ const WorksPage = () => {
       <div className="flex flex-col gap-8 mx-auto">
         {WORKS.map((work, index) => (
           <React.Fragment key={index}>
-            <div className="flex flex-row items-start gap-4">
+            <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-start ">
               <div className="w-[300px] shrink-0">
                 <AspectRatio
                   ratio={16 / 9}
@@ -41,7 +46,7 @@ const WorksPage = () => {
                   <img
                     src={work.image}
                     alt={work.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover text-center"
                   />
                 </AspectRatio>
               </div>

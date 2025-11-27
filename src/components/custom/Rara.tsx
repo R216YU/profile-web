@@ -1,7 +1,7 @@
-interface RaraProps {
+type RaraProps = {
   size?: number;
   className?: string;
-}
+};
 
 const Rara = ({ size = 48, className }: RaraProps) => {
   return (
